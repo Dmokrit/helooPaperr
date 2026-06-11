@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELOOOOO</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("./assets/adam.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* CENTER BUT SHIFT LEFT SLIGHTLY */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* envelope image */
+img {
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.08);
+}
+
+/* OPTIONAL: move envelope slightly left */
+a {
+    transform: translateX(-250px);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="./the_letter.html">
+        <img src="./assets/envelope.gif" alt="Envelope">
+    </a>
+
+</div>
+
+</body>
+</html>

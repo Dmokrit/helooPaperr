@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kinaaaa!</title>
+
+<style>
+body {
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+/* CENTER CONTENT */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* MAIN IMAGE */
+.main-image {
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+}
+
+/* COMMON GIF STYLE */
+.gif {
+    position: absolute;
+    z-index: 10;
+}
+
+.gif img {
+    width: 140px;
+    height: auto;
+}
+
+/* 🎲 "RANDOM" POSITIONS AROUND SCREEN */
+
+/* GIF 1 - top left */
+.gif1 {
+    top: 40px;
+    left: 40px;
+}
+
+/* GIF 2 - bottom left */
+.gif2 {
+    bottom: 40px;
+    left: 40px;
+}
+
+/* GIF 3 - top right */
+.gif3 {
+    top: 80px;
+    right: 40px;
+}
+
+/* GIF 4 - mid right */
+.gif4 {
+    bottom: 120px;
+    right: 80px;
+}
+
+/* 🎥 VIDEO bottom right */
+.video {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.video iframe {
+    width: 260px;
+    height: 150px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .gif {
+        position: static;
+        margin: 10px;
+    }
+
+    .video {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .main-image {
+        max-width: 350px;
+    }
+
+    .video iframe {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- GIF 1 -->
+    <div class="gif gif1">
+        <img src="./assets/cat-jump.gif" alt="gif1">
+    </div>
+
+    <!-- GIF 2 -->
+    <div class="gif gif2">
+        <img src="./assets/kucing-scuba-scuba-cat.gif" alt="gif2">
+    </div>
+
+    <!-- GIF 3 -->
+    <div class="gif gif3">
+        <img src="./assets/reaction.gif" alt="gif3">
+    </div>
+
+    <!-- GIF 4 -->
+    <div class="gif gif4">
+        <img src="./assets/uia-uia-cat.gif" alt="gif4">
+    </div>
+
+    <!-- CENTER -->
+    <div class="center">
+
+        <h1>WOW!!!! it's ur birthday today ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h1>
+
+        <img class="main-image" src="./assets/kinababy.png" alt="Birthday Image">
+
+    </div>
+
+</div>
+
+<!-- VIDEO -->
+<div class="video">
+    <iframe
+        src="https://youtu.be/RaeLAwacDG4?si=TFR7dg4VC5A1w89c"
+        allow="autoplay"
+        allowfullscreen>
+    </iframe>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+/* CENTER LAYOUT */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.main-image {
+    max-width: 750px;
+    width: 100%;
+}
+
+/* GIFS */
+.gif {
+    position: absolute;
+    z-index: 10;
+}
+
+.gif img {
+    width: 140px;
+}
+
+/* positions */
+.gif1 { top: 40px; left: 40px; }
+.gif2 { bottom: 40px; left: 40px; }
+.gif3 { top: 80px; right: 40px; }
+.gif4 { bottom: 120px; right: 80px; }
+
+/* VIDEO */
+.video {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.video iframe {
+    width: 260px;
+    height: 150px;
+    border-radius: 12px;
+    border: none;
+}
